@@ -7,7 +7,7 @@ import requests
 # (Fallback to pasted strings if running outside GitHub Actions)
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL", "PASTE_WEBHOOK_IF_TESTING_LOCALLY")
 TORN_API_KEY = os.environ.get("TORN_API_KEY", "PASTE_KEY_IF_TESTING_LOCALLY")
-PING_TARGET = "@here"
+PING_TARGET = "@everyone"
 
 if not DISCORD_WEBHOOK_URL or "PASTE" in DISCORD_WEBHOOK_URL:
     print("Missing DISCORD_WEBHOOK_URL secret.")
